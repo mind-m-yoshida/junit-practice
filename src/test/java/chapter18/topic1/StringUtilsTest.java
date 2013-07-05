@@ -12,4 +12,9 @@ public class StringUtilsTest {
 		assertThat(StringUtils.toSnakeCase("aaa"), CoreMatchers.is("aaa"));
 	}
 
+	@Test
+	public void _should_return_snake_case_input_HelloWorld() {
+		assertThat(StringUtils.toSnakeCase("HelloWorld"), CoreMatchers.is("hello_world"));
+	}
+
 }
