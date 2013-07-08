@@ -22,5 +22,10 @@ public class StringUtilsTest {
 		assertThat(StringUtils.toSnakeCase("practiceJunit"),
 				is("practice_junit"));
 	}
+	@Test
+	public void _should_return_snake_case_input_HogeFugaPiyo() {
+		assertThat(StringUtils.toSnakeCase("HogeFugaPiyo"),
+				is("hoge_fuga_piyo"));
+	}
 
 }
